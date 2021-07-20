@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public void dropUsersTable() {
-        (new UserDaoJDBCImpl()).dropUsersTable();
+        userDao.dropUsersTable();
     }
 
     public void saveUser(String name, String lastName, byte age) {
